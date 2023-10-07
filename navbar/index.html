@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: black;
+        border-radius: 50px;
+        color: #fff;
+      }
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+        margin-left: 25px;
+      }
+      .item {
+        font-size: 25px;
+      }
+      .search-input {
+        font-size: 20px;
+        border-radius: 50px;
+        margin-right: 50px;
+      }
+      .link {
+        color: white;
+        text-decoration: none;
+      }
+      .link:hover {
+        color: red;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="list">
+        <li class="item"><a href="#" class="link">Home</a></li>
+        <li class="item"><a href="#" class="link">About</a></li>
+        <li class="item"><a href="#" class="link">Services</a></li>
+        <li class="item"><a href="#" class="link">Contact us</a></li>
+      </ul>
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search this website"
+      />
+    </div>
+  </body>
+</html>

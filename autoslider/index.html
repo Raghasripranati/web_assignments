@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slider</title>
+
+        <link rel="stylesheet" href="slider.css">
+    </head>
+
+    <body>
+        <div class="slides">
+            <div class="slide">
+                <img src="1.jpg" alt="">
+                <h3>Flower</h3>
+            </div>
+            <div class="slide">
+                <img src="2.jpg" alt="">
+                <h3>Mountain</h3>
+            </div>
+            <div class="slide">
+                <img src="3.jpg" alt="">
+                <h3>Fish</h3>
+            </div>
+            <div class="slide">
+                <img src="4.jpg" alt="">
+                <h3>Dragon fly</h3>
+            </div>
+
+            <!-- <div class="buttons">
+                <a class="prev" onclick="plusSlides(-1)" href="#">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)" href="#">&#10095;</a>
+            </div> -->
+            
+            <div class="dots">
+                <ul>
+                    <li class="dot active" onclick="currentSlide(0)"></li>
+                    <li class="dot" onclick="currentSlide(1)"></li>
+                    <li class="dot" onclick="currentSlide(2)"></li>
+                    <li class="dot" onclick="currentSlide(3)"></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <script src="slider.js"></script>
+    </body>
+</html>

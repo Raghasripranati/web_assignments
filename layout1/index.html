@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-gap: 10px; */
+        grid-template-areas:
+          "navbar  navbar navbar navbar navbar"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar main main main"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar content-1 content-2 content-3"
+          "sidebar  sidebar footer footer footer";
+        text-align: center;
+        height: 100vh;
+      }
+
+      .item {
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      #navbar {
+        grid-area: navbar;
+
+        background-color: wheat;
+      }
+
+      #main {
+        grid-area: main;
+
+        background-color: skyblue;
+      }
+
+      #sidebar {
+        grid-area: sidebar;
+
+        background-color: lightsalmon;
+      }
+
+      #content-1 {
+        grid-area: content-1;
+        background-color: lightyellow;
+      }
+
+      #content-2 {
+        grid-area: content-2;
+        background-color: lightyellow;
+      }
+
+      #content-3 {
+        grid-area: content-3;
+        background-color: lightyellow;
+      }
+
+      #footer {
+        grid-area: footer;
+
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item" id="navbar">NAVBAR</div>
+      <div class="item" id="sidebar">SIDEBAR</div>
+      <div class="item" id="main">MAIN</div>
+      <div class="item" id="content-1">CONTENT-1</div>
+      <div class="item" id="content-2">CONTENT-2</div>
+      <div class="item" id="content-3">CONTENT-3</div>
+      <div class="item" id="footer">FOOTER</div>
+    </div>
+  </body>
+</html>
